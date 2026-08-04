@@ -1,0 +1,12 @@
+query getPersonData($recordId: String!) {
+  person(id: $recordId) {
+    name {
+      full_name
+    }
+    email_addresses
+    company {
+      name
+      domains
+    }
+  }
+}
